@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/ApiGateWays/">
+    <Project Path="ApiGateWays/Ocelot.ApiGateWays/Ocelot.ApiGateWays.csproj" />
+  </Folder>
+  <Folder Name="/BackendServices/" />
+  <Folder Name="/BackendServices/UsersServices/">
+    <Project Path="BackendServices/UsersServices/UsersService.Domain/UsersService.Core.csproj" />
+    <Project Path="BackendServices/UsersServices/UsersService.Infrastructure/UsersService.Infrastructure.csproj" />
+    <Project Path="UsersService.API/UsersService.API.csproj" />
+  </Folder>
+</Solution>
