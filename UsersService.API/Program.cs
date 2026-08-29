@@ -1,4 +1,5 @@
 using eCommerce.API.MiddleWare;
+using FluentValidation.AspNetCore;
 using Scalar.AspNetCore;
 using System.Text.Json.Serialization;
 using UsersService.Core;
@@ -7,6 +8,7 @@ using UsersService.Infrastructure;
 
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddControllers().AddJsonOptions(opt =>
 {
     opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());

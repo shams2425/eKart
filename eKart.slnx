@@ -3,6 +3,11 @@
     <Project Path="ApiGateWays/Ocelot.ApiGateWays/Ocelot.ApiGateWays.csproj" />
   </Folder>
   <Folder Name="/BackendServices/" />
+  <Folder Name="/BackendServices/ProductService/">
+    <Project Path="BackendServices/ProductService/ProductService.BussinessLayer/ProductService.BussinessLayer.csproj" Id="e306289a-8bd9-490c-9062-7971e37f9b50" />
+    <Project Path="BackendServices/ProductService/ProductService.DataAccessLayer/ProductService.DataAccessLayer.csproj" Id="31bd0224-f86b-413b-8687-eb81ecbf07d9" />
+    <Project Path="ProductService.API/ProductService.API.csproj" Id="cb13b896-c25f-42a7-bfa4-4e5617156b3d" />
+  </Folder>
   <Folder Name="/BackendServices/UsersServices/">
     <Project Path="BackendServices/UsersServices/UsersService.Domain/UsersService.Core.csproj" />
     <Project Path="BackendServices/UsersServices/UsersService.Infrastructure/UsersService.Infrastructure.csproj" />
