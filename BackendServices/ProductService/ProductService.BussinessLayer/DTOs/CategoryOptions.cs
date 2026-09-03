@@ -5,5 +5,6 @@ public enum CategoryOptions
     Electronics,
     HomeAppliance,
     Furniture,
-    Accessories
+    Accessories,
+    HomeAppliances
 }

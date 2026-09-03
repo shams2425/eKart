@@ -9,7 +9,7 @@ namespace ProductService.BussinessLayer;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddbussinessLayer(this IServiceCollection services)
+    public static IServiceCollection AddBussinessLayer(this IServiceCollection services)
     {
         services.AddAutoMapper(typeof(ProductAddRequestToMappingProfile).Assembly);
         services.AddScoped<IProductService, ProductServices>();

@@ -11,17 +11,17 @@ namespace ProductService.BussinessLayer.Services;
 
 public class ProductServices : IProductService
 {
-    private readonly IProductRepository _repository;
+    private readonly IProductRepository _productRepository;
     private readonly IMapper _mapper;
     private readonly IValidator<ProductAddRequest> _productAddRequestValidator;
     private readonly IValidator<ProductUpdateRequest> _productUpdateRequestValidator;
 
-    public ProductServices(IProductRepository repository, 
+    public ProductServices(IProductRepository productRepository, 
                             IMapper mapper, 
                             IValidator<ProductAddRequest> productAddRequestValidator,
                             IValidator<ProductUpdateRequest> productUpdateRequestValidator)
     {
-        _repository = repository;
+        _productRepository = productRepository;
         _mapper = mapper;
         _productAddRequestValidator = productAddRequestValidator;
         _productUpdateRequestValidator = productUpdateRequestValidator;
@@ -43,7 +43,7 @@ public class ProductServices : IProductService
         }
 
             Product product = _mapper.Map<Product>(productAddRequest);
-            Product? addedProduct = await _repository.AddProduct(product);
+            Product? addedProduct = await _productRepository.AddProduct(product);
 
             if (addedProduct == null)
             {
@@ -68,7 +68,7 @@ public class ProductServices : IProductService
         }
 
         Product product = _mapper.Map<Product>(productUpdateRequest);
-        Product? updatedProduct = await _repository.AddProduct(product);
+        Product? updatedProduct = await _productRepository.AddProduct(product);
 
         if (updatedProduct == null)
         {
@@ -85,7 +85,7 @@ public class ProductServices : IProductService
         {
             throw new ArgumentNullException(nameof(productId));
         }
-        bool isDeleted = await _repository.DeleteProduct(productId);
+        bool isDeleted = await _productRepository.DeleteProduct(productId);
         return isDeleted;
     }
 
@@ -94,7 +94,7 @@ public class ProductServices : IProductService
     #region GET
     public async Task<ProductResponse> GetProductByCondition(Expression<Func<Product, bool>> conditionExpression)
     {
-      Product product = await _repository.GetProductByCondition(conditionExpression);
+      Product product = await _productRepository.GetProductByCondition(conditionExpression);
         if (product == null)
         {
             return null;
@@ -105,7 +105,7 @@ public class ProductServices : IProductService
 
     public async Task<List<ProductResponse>> GetProducts()
     {
-     IEnumerable<Product> product = await _repository.GetProducts();
+     IEnumerable<Product> product = await _productRepository.GetProducts();
         if (product == null)
         {
             throw new ArgumentException(nameof(product));
@@ -115,7 +115,7 @@ public class ProductServices : IProductService
 
     public async Task<List<ProductResponse>> GetProductsByCondition(Expression<Func<Product, bool>> conditionExpression)
     {
-        IEnumerable<Product> product = await _repository.GetProductsByCondition(conditionExpression);
+        IEnumerable<Product> product = await _productRepository.GetProductsByCondition(conditionExpression);
         if (product == null)
         {
             throw new ArgumentException(nameof(product));

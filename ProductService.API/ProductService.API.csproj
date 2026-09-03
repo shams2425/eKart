@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackendServices\ProductService\ProductService.BussinessLayer\ProductService.BussinessLayer.csproj" />
+    <ProjectReference Include="..\BackendServices\ProductService\ProductService.DataAccessLayer\ProductService.DataAccessLayer.csproj" />
   </ItemGroup>
 
 </Project>
