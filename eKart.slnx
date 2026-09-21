@@ -3,6 +3,11 @@
     <Project Path="D:/eKart/eKart/ApiGateWays/Ocelot.ApiGateWays/Ocelot.ApiGateWays.csproj" />
   </Folder>
   <Folder Name="/BackendServices/" />
+  <Folder Name="/BackendServices/OrderService/">
+    <Project Path="BackendServices/OrderService/OrderService.API/OrderService.API.csproj" Id="80b3d47a-e269-41c5-8e9f-e72d9e732b10" />
+    <Project Path="BackendServices/OrderService/OrderService.BussinessLayer/OrderService.BussinessLayer.csproj" Id="21e2f844-a9d8-48e0-8200-8f0c9ea23454" />
+    <Project Path="BackendServices/OrderService/OrderService.DataAccessLayer/OrderService.DataAccessLayer.csproj" Id="01b41b62-ab0e-4513-b209-adabbb258a08" />
+  </Folder>
   <Folder Name="/BackendServices/ProductsService/">
     <Project Path="BackendServices/ProductService/ProductService.BussinessLayer/ProductService.BussinessLayer.csproj" />
     <Project Path="BackendServices/ProductService/ProductService.DataAccessLayer/ProductService.DataAccessLayer.csproj" />
