@@ -1,4 +1,4 @@
-﻿namespace OrderService.BussinessLayer.DTOs;
+﻿namespace OrdersService.BussinessLayer.DTOs;
 
 public record OrderItemUpdateRequest(Guid ProductID, decimal UnitPrice, int Quantity)
 {

@@ -1,4 +1,4 @@
-﻿namespace OrderService.DataAccessLayer.Entities;
+﻿namespace OrdersService.DataAccessLayer.Entities;
 
 public class Order
 {

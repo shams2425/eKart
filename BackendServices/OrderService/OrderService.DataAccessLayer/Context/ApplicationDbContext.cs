@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OrderService.DataAccessLayer.Entities;
+using OrdersService.DataAccessLayer.Entities;
 
-namespace OrderService.DataAccessLayer.Context;
+namespace OrdersService.DataAccessLayer.Context;
 
 public class ApplicationDbContext : DbContext
 {

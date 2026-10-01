@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using OrderService.BussinessLayer.DTOs;
-using OrderService.DataAccessLayer.Entities;
+using OrdersService.BussinessLayer.DTOs;
+using OrdersService.DataAccessLayer.Entities;
 
-namespace OrderService.BussinessLayer.Mappers;
+namespace OrdersService.BussinessLayer.Mappers;
 
 public class OrderItemToOrderItemResponseMappingProfile : Profile
 {

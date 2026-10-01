@@ -1,4 +1,4 @@
-﻿namespace OrderService.API.MiddleWare;
+﻿namespace OrdersService.API.MiddleWare;
 
 public class ExceptionHandlingMiddleware
 {

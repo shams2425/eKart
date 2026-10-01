@@ -1,4 +1,4 @@
-﻿namespace OrderService.BussinessLayer.DTOs;
+﻿namespace OrdersService.BussinessLayer.DTOs;
 
 public record OrderAddRequest(Guid UserId, DateTime OrderDate, List<OrderItemAddRequest> OrderItem)
 {

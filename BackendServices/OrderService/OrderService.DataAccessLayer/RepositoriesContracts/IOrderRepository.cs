@@ -1,7 +1,7 @@
-﻿using OrderService.DataAccessLayer.Entities;
+﻿using OrdersService.DataAccessLayer.Entities;
 using System.Linq.Expressions;
 
-namespace OrderService.DataAccessLayer.RepositoriesContracts;
+namespace OrdersService.DataAccessLayer.RepositoriesContracts;
 
 public interface IOrderRepository
 {

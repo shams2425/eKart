@@ -1,4 +1,4 @@
-using eCommerce.API.MiddleWare;
+using UsersService.API.MiddleWare;
 using FluentValidation.AspNetCore;
 using Scalar.AspNetCore;
 using System.Text.Json.Serialization;

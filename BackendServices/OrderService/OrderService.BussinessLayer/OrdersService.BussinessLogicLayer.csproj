@@ -12,13 +12,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OrderService.DataAccessLayer\OrderService.DataAccessLayer.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Validators\" />
-    <Folder Include="Services\" />
-    <Folder Include="ServiceContracts\" />
+	<ProjectReference Include="..\OrderService.DataAccessLayer\OrdersService.DataAccessLayer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using OrderService.BussinessLayer.DTOs;
-using OrderService.DataAccessLayer.Entities;
+using OrdersService.BussinessLayer.DTOs;
+using OrdersService.DataAccessLayer.Entities;
 
 namespace OrdersService.BusinessLogicLayer.Mappers;
 

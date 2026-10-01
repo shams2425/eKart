@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OrderService.DataAccessLayer.Context;
-using OrderService.DataAccessLayer.Entities;
-using OrderService.DataAccessLayer.RepositoriesContracts;
+using OrdersService.DataAccessLayer.Context;
+using OrdersService.DataAccessLayer.Entities;
+using OrdersService.DataAccessLayer.RepositoriesContracts;
 using System.Linq.Expressions;
 
-namespace OrderService.DataAccessLayer.Repositories;
+namespace OrdersService.DataAccessLayer.Repositories;
 
 public class OrderRepository : IOrderRepository
 {
@@ -17,7 +17,8 @@ public class OrderRepository : IOrderRepository
 
     public async Task<Order?> AddOrder(Order order)
     {
-       order.OrderID = Guid.NewGuid();
+       // order.OrderID = Guid.NewGuid();
+
         await _db.AddAsync(order);
         await _db.SaveChangesAsync();
 

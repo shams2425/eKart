@@ -11,8 +11,9 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
 	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OrderService.BussinessLayer\OrderService.BussinessLayer.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\OrderService.BussinessLayer\OrdersService.BussinessLogicLayer.csproj" />
+		<ProjectReference Include="..\OrderService.DataAccessLayer\OrdersService.DataAccessLayer.csproj" />
+	</ItemGroup>
 
 </Project>

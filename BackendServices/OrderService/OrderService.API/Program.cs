@@ -1,6 +1,7 @@
-using OrderService.API.MiddleWare;
-using OrderService.BussinessLayer;
-using OrderService.DataAccessLayer;
+using OrdersService.API.MiddleWare;
+using OrdersService.BusinessLayer;
+using OrdersService.BussinessLayer;
+using OrdersService.DataAccessLayer;
 
 var builder = WebApplication.CreateBuilder(args);
 
