@@ -77,7 +77,7 @@ public class OrderRepository : IOrderRepository
         }
 
         _db.Entry(existingOrder).CurrentValues.SetValues(order);
-        _db.OrderItem.RemoveRange(existingOrder.OrderItems);
+        _db.OrderItems.RemoveRange(existingOrder.OrderItems);
         existingOrder.OrderItems = order.OrderItems;
         await _db.SaveChangesAsync();
         return order;

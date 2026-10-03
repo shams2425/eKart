@@ -26,6 +26,7 @@ var app = builder.Build();
 app.UseExceptionHandlingMiddleware();
 
 app.UseRouting();
+app.MapControllers();
 
 //CORS
 app.UseCors();
